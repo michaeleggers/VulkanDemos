@@ -1,6 +1,9 @@
 # VulkanDemos
 
-This project contains several small demos written using the Vulkan API.
+This project contains several small demos using the Vulkan API. There are several "bad" things going on, for example
+only one image can be "in flight" at a time. That means that pipeline stages which have already completed are not
+able to start work on a new image. Thus, the code should be taken with a grain of salt as I was learning (and still do)
+Vulkan during its creation :)
 
 
 [Cubemapping Demo](https://github.com/michaeleggers/VulkanDemos/blob/main/A4_Cubemapping/main.cpp)
