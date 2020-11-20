@@ -1,0 +1,85 @@
+﻿  ImageLoader.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_vulkan.cpp
+  imgui_widgets.cpp
+  Model.cpp
+c:\repos\vulkanframework\vulkanframework\vulkanframework\dependencies\modelloader\model.h(61): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\dependencies\modelloader\model.h(80): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\dependencies\modelloader\model.cpp(89): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  main.cpp
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(94): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(99): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(100): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(214): warning C4552: '!=': result of expression not used
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(217): warning C4552: '!=': result of expression not used
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(489): error C2660: 'vkal_create_graphics_pipeline': function does not take 10 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(284): note: see declaration of 'vkal_create_graphics_pipeline'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(497): error C2660: 'vkal_create_graphics_pipeline': function does not take 10 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(284): note: see declaration of 'vkal_create_graphics_pipeline'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(574): warning C4244: 'initializing': conversion from 'uint64_t' to 'double', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(627): error C2660: 'vkal_bind_descriptor_set': function does not take 3 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(341): note: see declaration of 'vkal_bind_descriptor_set'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(628): error C2660: 'vkal_bind_descriptor_set': function does not take 3 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(341): note: see declaration of 'vkal_bind_descriptor_set'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(629): error C2660: 'vkal_record_models': function does not take 6 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(333): note: see declaration of 'vkal_record_models'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(630): error C2660: 'vkal_bind_descriptor_set': function does not take 3 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(341): note: see declaration of 'vkal_bind_descriptor_set'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(631): error C2660: 'vkal_record_models': function does not take 6 arguments
+  c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.h(333): note: see declaration of 'vkal_record_models'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(635): error C3861: 'vkal_draw_frame': identifier not found
+  platform.cpp
+  vkal.cpp
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(74): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(90): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(171): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(203): warning C4838: conversion from 'int' to 'uint32_t' requires a narrowing conversion
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(212): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(227): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(314): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(424): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(477): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(502): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(586): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(659): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(697): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(704): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(728): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(764): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(910): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(941): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(958): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(959): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(973): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1007): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1008): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1023): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1182): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1311): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1312): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1570): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1571): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1583): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1589): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1610): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1611): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1623): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1629): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1755): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1766): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1778): warning C4244: 'argument': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1917): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1934): warning C4244: 'return': conversion from 'VkDeviceSize' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1949): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1952): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1990): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(1993): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(2021): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(2024): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(2033): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(2036): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\vkal.cpp(2050): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...

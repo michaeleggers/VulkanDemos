@@ -1,0 +1,13 @@
+﻿  main.cpp
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(94): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(99): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(100): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(214): warning C4552: '!=': result of expression not used
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(217): warning C4552: '!=': result of expression not used
+c:\repos\vulkanframework\vulkanframework\vulkanframework\vulkanframework\main.cpp(590): warning C4244: 'initializing': conversion from 'uint64_t' to 'double', possible loss of data
+  Generating code
+  76 of 1324 functions ( 5.7%) were compiled, the rest were copied from previous compilation.
+    8 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  VulkanFramework.vcxproj -> C:\repos\VulkanFramework\VulkanFramework\VulkanFramework\x64\Release\VulkanFramework.exe

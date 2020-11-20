@@ -1,0 +1,8 @@
+﻿  Versuch1c_v2.cpp
+c:\repos\vulkanframework\vulkanframework\vulkanframework\a1_versuch1c\versuch1c_v2.cpp(2079): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+  Generating code
+  3 of 2754 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  A1_Versuch1c.vcxproj -> C:\repos\VulkanFramework\VulkanFramework\VulkanFramework\x64\Release\A1_Versuch1c.exe

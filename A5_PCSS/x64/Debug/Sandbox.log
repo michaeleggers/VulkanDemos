@@ -1,0 +1,12 @@
+﻿  sandbox.cpp
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(284): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(288): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(289): warning C4018: '<': signed/unsigned mismatch
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(511): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(525): warning C4244: 'initializing': conversion from 'uint64_t' to 'double', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(575): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(580): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(588): warning C4305: '+=': truncation from 'double' to 'float'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(590): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\repos\vulkanframework\vulkanframework\vulkanframework\sandbox\sandbox.cpp(597): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Sandbox.vcxproj -> C:\repos\VulkanFramework\VulkanFramework\VulkanFramework\x64\Debug\Sandbox.exe
