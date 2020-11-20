@@ -348,7 +348,7 @@ int main() {
 	Model model_diffuse_light = create_model_from_file2("../assets/obj/sphere.obj", p, NULL);
 	model_diffuse_light.offset = vkal_vertex_buffer_add(model_diffuse_light.vertices, model_diffuse_light.vertex_count);
 	model_diffuse_light.material.emissive = glm::vec4(1, 1, 1, 1);
-	model_diffuse_light.pos = glm::vec3(20, 1, 20);
+	model_diffuse_light.pos = glm::vec3(5, 8, 10);
 	glm::mat4 light_scale = glm::scale(glm::mat4(1), glm::vec3(0.2));
 	model_diffuse_light.model_matrix = glm::translate(glm::mat4(1), model_diffuse_light.pos) * light_scale;
 
@@ -409,7 +409,7 @@ int main() {
 		ImGui::RadioButton("16x16 fixed", (int*)&scene_data.poisson_disk_size, 5);
 		ImGui::RadioButton("32x32 fixed", (int*)&scene_data.poisson_disk_size, 6);
 		ImGui::RadioButton("64x64 fixed", (int*)&scene_data.poisson_disk_size, 7);
-		ImGui::SliderFloat3("Light Position", &model_diffuse_light.pos[0], -50, 50);
+		//ImGui::SliderFloat3("Light Position", &model_diffuse_light.pos[0], -50, 50);
 		static float light_size = 0.5f;
 		ImGui::SliderFloat("Light Size", &light_size, 0, 10);
 		static float light_cam_pov = 45.f;
@@ -426,6 +426,12 @@ int main() {
 		ImGui::Render();
 
 		/* Update Light Model Matrix */
+		static float light_pos_x = 1.0;
+		static float light_pos_z = 1.0;
+		light_pos_x += 0.001;
+		light_pos_z += 0.001;
+		model_diffuse_light.pos.x = 8.0f*cosf(light_pos_x);
+		model_diffuse_light.pos.z = 8.0f*sinf(light_pos_z);
 		model_diffuse_light.model_matrix = glm::translate(glm::mat4(1), model_diffuse_light.pos) * light_scale;
 
 		// Need new dimensions?

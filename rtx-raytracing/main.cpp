@@ -415,8 +415,8 @@ int main() {
 	unit_plane.model_matrix = glm::mat4(1);
 
 	/* Load models from file and assign textures. */
-	Model mario_model = create_model_from_file2("../assets/obj/spheres.obj", p, &model_memory);
-	//Model mario_model = create_model_from_file2("../assets/obj/pknight_small.obj", p, &model_memory);
+	//Model mario_model = create_model_from_file2("../assets/obj/spheres.obj", p, &model_memory);
+	Model mario_model = create_model_from_file2("../assets/obj/pknight_small.obj", p, &model_memory);
 	mario_model.offset = vkal_vertex_buffer_add(mario_model.vertices, mario_model.vertex_count);
 	mario_model.index_buffer_offset = vkal_index_buffer_add(mario_model.indices, mario_model.index_count);
 	mario_model.material.diffuse = glm::vec4(1.0, 0.84, 0.0, 1.0);
@@ -425,7 +425,7 @@ int main() {
 	Texture mario_texture = vkal_create_texture(2, mario_image.data, mario_image.width, mario_image.height, mario_image.channels, 0,
 		VK_IMAGE_VIEW_TYPE_2D, 0, 1, 0, 1, VK_FILTER_LINEAR, VK_FILTER_LINEAR);
 	assign_texture_to_model(&mario_model, mario_texture, 0, TEXTURE_TYPE_DIFFUSE);
-	mario_model.material.is_textured = 0; /* deactivate texturing manually for now, because I do not have an appropriate palmtree texture. */
+	mario_model.material.is_textured = 1; /* deactivate texturing manually for now, because I do not have an appropriate palmtree texture. */
 	vkal_update_descriptor_set_texturearray(rasterizer_descriptor_sets[0], VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, mario_model.texture.binding, mario_model.material.texture_id, mario_model.texture);
 
 	Model plane_model = create_model_from_file2("../assets/obj/plane.obj", p, &model_memory);
@@ -603,7 +603,7 @@ int main() {
 		ImGui::Begin("Raytraced Shadow Demo");
 		ImGui::Checkbox("Use Textures", (bool*)&light_ubo.use_textures);
 		ImGui::Text("Light Parameters");
-		ImGui::SliderFloat3("Position", &light_ubo.pos[0], -20.f, 20.f);
+		//ImGui::SliderFloat3("Position", &light_ubo.pos[0], -20.f, 20.f);
 		ImGui::SliderFloat("Radius", &light_ubo.radius, 0.0f, 1.0f);
 		ImGui::SliderInt("Sample Count", (int*)&light_ubo.sample_count, 1, 128);
 		ImGui::Text("Noise Function");
@@ -662,6 +662,13 @@ int main() {
 		vkal_update_uniform(&misc_ubo_buffer, &misc_ubo);
 		vkal_update_uniform(&rasterizer_modelview_ubo, &view_projection_data);
 		vkal_update_uniform(&rasterizer_light_ubo, &light_ubo);
+		static float light_pos_x = 1.0f;
+		static float light_pos_z = 1.0f;
+		light_pos_x += 0.03f;
+		light_pos_z += 0.03f;
+		light_ubo.pos.x = 5.0f*cosf(light_pos_x);
+		light_ubo.pos.z = 5.0f*sinf(light_pos_z);
+		light_ubo.pos.y = 2.0f;
 		vkal_update_uniform(&light_ubo_buffer, &light_ubo);
 		vkal_update_uniform(&postprocess_ubo, &postprocess_data);
 
